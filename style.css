@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.container{
+    min-height: 100vh;
+    background-color: rgba(248, 198, 0, 0.71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myinp input{
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all .6s ease-in;
+    border: none;
+    cursor: pointer;
+}
+
+.myinp{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.myinp label{
+    position: absolute;
+    font-size: 25px;
+    color: #9d9c9c;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.myinp input{
+   padding-left: 5px;
+   color: rgba(248, 182, 0, 0.71);
+   font-size: 0px;
+   cursor: text;
+
+}
+
+.myinp input.active{
+    width: 200px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline:none;
+    outline-offset: 0;
+}
+
+.myinp .underline{
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 10px;
+    left: 5px;
+    width: 0;
+    background-color: rgba(248, 182, 0, 0.71);
+    transition: all .6s ease;
+}
+.underline.active{
+    width: 85%;
+}
